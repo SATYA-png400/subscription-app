@@ -1,16 +1,20 @@
-# React + Vite
+# Location-Based Subscription App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+This project is a full-stack React application built as an internship assignment. It features a location-aware subscription UI that captures a user's geographic coordinates and saves their subscription choice directly to a cloud database.
 
-Currently, two official plugins are available:
+## Features
+* **Geolocation:** Automatically detects the user's latitude and longitude using the native browser Geolocation API.
+* **Authentication:** Utilizes Firebase Anonymous Authentication to silently generate and track unique user sessions without requiring a manual login.
+* **Cloud Database:** Integrates with Firebase Firestore to store subscription records, logging the chosen plan, price, user ID, location coordinates, and a server timestamp.
+* **Interactive UI:** Clean, responsive pricing cards built with React state management.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+* **Frontend:** React.js (built with Vite)
+* **Backend as a Service:** Firebase (Auth & Firestore)
+* **Version Control:** Git & GitHub
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## How to Run Locally
+1. Clone the repository to your local machine.
+2. Open the terminal and navigate to the project folder.
+3. Run `npm install` to install all required dependencies.
+4. Run `npm run dev` to start the local development server.
